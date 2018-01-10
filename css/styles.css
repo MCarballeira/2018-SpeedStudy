@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+/*
+Dark blue rgb(3,17,20) #031114
+blue rgb(0,43,102) #002b66
+bluer rgb(0,48,140) #00308c
+yellow rgb(245,226,6) #f5e206
+white rgb(243,225,217) #f3e1d9
 
+*/
 html, body{
 	font-family: "Lato", sans-serif;
 	margin: 0;
@@ -8,19 +15,33 @@ html, body{
 
 header{
 	position: fixed;
-	background: #0E0B16;/*0E0B16;*/
+	background: #031114;/*0E0B16;*/
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 50px;
-	border-top: solid 4px #4717f6;
+	border-top: solid 4px #00308c;
 	padding-bottom: 0;
-	color: #e7dfdd;
-	z-index: 1;
+	color: #f3e1d9;
+	z-index: 2;
 }
 
+header h1{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 100;
+	text-align: right;
+	padding-right: 15px;
+}
+
+header a{
+	text-decoration: none;
+	color: #f3e1d9;
+}
+
+
 .circle{
-	background: #f9cf00;/*e9b000;/*dcb239;*/
+	background: #f5e206;/*e9b000;/*dcb239;*/
 	height: 100px;
 	width: 100px;
 	border-radius: 50%;
@@ -31,24 +52,28 @@ header{
 /*SUBHEADER*/
 
 .subheader{
-	background: linear-gradient(#0E0B16,#4717f6);
+	background: linear-gradient(#031114,#00308c);
 	position: fixed;
 	height: 150px;
 	margin-top: -150px;
 	width: 100%;
-	color: #e7dfdd;
+	color: #f3e1d9;
+	z-index: 1;
 }
 .subheader h1{
 	text-align: center;
 	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
 
 }
 
 .countdown{
 	position: relative;
 	text-align: center;
-	border-top: 2px solid #f9cf00;
-	border-bottom: 2px solid #f9cf00;
+	border-top: 2px solid #f5e206;
+	border-bottom: 2px solid #f5e206;
 	margin: 0 auto;
 	width: 50%;
 }
@@ -68,7 +93,7 @@ header{
 
 .landing{
 	margin-top: 200px;
-	background-image: url(bgTrees.jpg);
+	background: #031114;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -91,15 +116,15 @@ header{
 	max-width:50%;
 	padding:15px;
 	margin:10px;
-	border:solid 1px black;
+	border:solid 1px #002b66;
 	border-radius: 5px;
-	background: rgba(14,11,22,0.8);
-	color: #e7dfdd;
+	background: rgba(3,17,20,0.5);
+	color: #f3e1d9;
 	font-weight: 100;
 }
 
 .list a:link{
-	color:#f9cf00;
+	color:#f5e206;
 }
 
 .list a:visited{
@@ -139,3 +164,48 @@ li {
 	background: #e7dfdd;
 	color: #0E0B16;
 }
+
+
+/*FOOTER*/
+footer {
+	padding: 2em 0 5em 1em;
+	background: linear-gradient(to bottom right, #031114, #00308c);
+	color: #f3e1d9;
+}
+
+
+footer a{
+	color: #f3e1d9;
+}
+
+footer a:hover{
+	color: #f5e206;
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+		 -o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+			transition: all 0.5s;
+}
+
+footer ul {
+	padding-left: 0;
+	list-style: none
+}
+
+footer li {
+	display: inline-block;
+	text-align: left;
+	margin-top: 0;
+	letter-spacing:30px;
+	font-size: 30px;
+}
+
+/*
+Dark blue rgb(3,17,20) #031114
+blue rgb(0,43,102) #002b66
+bluer rgb(0,48,140) #00308c
+yellow rgb(245,226,6) #f5e206
+white rgb(243,225,217) #f3e1d9
+
+*/
