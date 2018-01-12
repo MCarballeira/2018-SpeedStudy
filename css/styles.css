@@ -54,26 +54,27 @@ header a{
 .subheader{
 	background: linear-gradient(#031114,#00308c);
 	position: fixed;
-	height: 150px;
-	margin-top: -150px;
+	height: 180px;
+	margin-top: -180px;
 	width: 100%;
 	color: #f3e1d9;
 	z-index: 1;
 }
+
 .subheader h1{
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 30px;
 	font-weight: 700;
 	letter-spacing: 1px;
-
 }
 
 .countdown{
 	position: relative;
 	text-align: center;
 	border-top: 2px solid #f5e206;
-	border-bottom: 2px solid #f5e206;
+
+	padding-bottom: 0px;
 	margin: 0 auto;
 	width: 50%;
 }
@@ -84,15 +85,38 @@ header a{
 }
 
 .item h2{
-	margin-top: 0;
+	margin-top: 10px;
 	margin-bottom: 0;
-	
+}
+
+
+/*countdown bar*/
+@import "compass/css3";
+
+.progress {
+    width: 100%;
+    height: 10px;
+}
+
+.progress-wrap {
+    background: #031114;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;   
+    border: 1px solid #f5e206;
+
+}
+.progress-bar {
+    background: #002b66;
+    left: 0;
+    position: absolute;
+    top: 0;
 }
 
 /*MAIN SECTION*/
 
 .landing{
-	margin-top: 200px;
+	margin-top: 230px;
 	background: #031114;
 	background-attachment: fixed;
 	background-repeat: no-repeat;

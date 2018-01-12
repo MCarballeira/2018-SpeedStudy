@@ -33,5 +33,25 @@ var x = setInterval(function() {
 	   document.getElementById("countdown").innerHTML = "Countdown date expired. <br> Please, send me a message to remember me to change it. <br> Thank you!";
     }
 
+    //Bar
+
+    // Move bar...
+    moveProgressBar();
+
+
+    // SIGNATURE PROGRESS
+    function moveProgressBar() {
+        var timeLeft = seconds+minutes*60+hours*3600+days*3600*24;
+        var getPercent = (31536000-timeLeft)/31536000;
+        var getProgressWrapWidth = $('.progress-wrap').width();
+        var progressTotal = getPercent * getProgressWrapWidth;
+        var animationLength = 1500;
+        
+        // on page load, animate percentage bar to data percentage length
+        // .stop() used to prevent animation queueing
+        $('.progress-bar').stop().animate({
+            left: progressTotal
+        }, animationLength);
+    }
 }, 1000);
 
